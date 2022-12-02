@@ -1,8 +1,9 @@
 # advent of code 2022
 # day 1 (calorie counting): https://adventofcode.com/2022/day/1
 
-file = open("inputD1P1.txt", "r")
-lines = file.readlines()
+with open("inputD1P1.txt", "r") as handle:
+    lines = handle.readlines()
+
 elf_counter = 0  # current elf
 new_calories_sum = 0  #sum of calories of current elf 
 elf_calories = [] # pairs of (elf counter, elf calories sum)
