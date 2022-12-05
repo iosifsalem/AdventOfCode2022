@@ -23,4 +23,4 @@ for line in lines:
         number_of_overlaps += 1
 
 print(f'Part 1: number of inclusions = {number_of_inclusions}')
-print(f'Part 2: number of overlaps= {number_of_overlaps}')
+print(f'Part 2: number of overlaps = {number_of_overlaps}')
