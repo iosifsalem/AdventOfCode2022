@@ -23,7 +23,6 @@ def initialize_stacks(lines):
 with open("inputD5.txt", "r") as handle:
     lines = handle.readlines()
     
-initial_crates_by_level = []
 stacks, start_of_moves = initialize_stacks(lines)
 
 # move crates
