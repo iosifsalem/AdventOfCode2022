@@ -13,6 +13,7 @@ sum_of_directories_smaller_than_threshold = 0
 root = T.Node('root', mytype='dir', size=0, pending_sizes=[])
 current_dir = root
 
+# one pass input/tree traversal
 for line in lines:
     command = line.strip().split(' ')
 
@@ -38,13 +39,12 @@ for line in lines:
         name = command[1].replace('.','_')        
         if command[0] == 'dir':
             exec(f"{name} = T.Node(name, parent=current_dir, mytype='dir', size=0, pending_sizes=[])")
-            # if a new directory is parsed, add it to the pending_sizes list 
             current_dir.pending_sizes.append(name)
         else:
             exec(f"{name} = T.Node(name, parent=current_dir, mytype='file', size=int(command[0]))")
             current_dir.size += int(command[0])
             
-# update path to root for the last 'root-rightmost parent' path
+# update path to root for the 'rightmost directory-to-root' path
 while current_dir.parent != None:
     # cd .. implies that the current_dir size has been computed
     if current_dir.size <= threshold:
