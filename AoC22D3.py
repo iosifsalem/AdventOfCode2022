@@ -3,7 +3,7 @@
 
 import string
 
-with open("inputD3.txt", "r") as handle:
+with open("inputs/inputD3.txt", "r") as handle:
     lines = handle.readlines()
     
 all_letters = list(string.ascii_lowercase) + list(string.ascii_uppercase)

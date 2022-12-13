@@ -91,7 +91,7 @@ def compute_scenic_score(i,j,max_neighbor):
     
     return max_neighbor
 
-with open("inputD8.txt", "r") as handle:
+with open("inputs/inputD8.txt", "r") as handle:
     lines = handle.readlines()
 
 n_rows = len(lines)

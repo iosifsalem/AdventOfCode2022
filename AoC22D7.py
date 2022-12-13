@@ -3,7 +3,7 @@
 
 import anytree as T  
 
-with open("inputD7.txt", "r") as handle:
+with open("inputs/inputD7.txt", "r") as handle:
     lines = handle.readlines()
     
 # Part 1: find the sum of sizes of all directories of size at most 100000

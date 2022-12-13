@@ -67,7 +67,7 @@ def compute_reward(line):
     
     return reward
 
-with open("inputD2.txt", "r") as handle:
+with open("inputs/inputD2.txt", "r") as handle:
     lines = handle.readlines()
     
 total_reward = 0

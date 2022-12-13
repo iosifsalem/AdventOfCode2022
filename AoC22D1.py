@@ -1,7 +1,7 @@
 # advent of code 2022
 # day 1 (calorie counting): https://adventofcode.com/2022/day/1
 
-with open("inputD1P1.txt", "r") as handle:
+with open("inputs/inputD1P1.txt", "r") as handle:
     lines = handle.readlines()
 
 elf_counter = 0  # current elf

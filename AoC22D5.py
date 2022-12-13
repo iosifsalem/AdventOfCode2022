@@ -20,7 +20,7 @@ def initialize_stacks(lines):
                 
     return stacks, id_line + 2
 
-with open("inputD5.txt", "r") as handle:
+with open("inputs/inputD5.txt", "r") as handle:
     lines = handle.readlines()
     
 stacks, start_of_moves = initialize_stacks(lines)

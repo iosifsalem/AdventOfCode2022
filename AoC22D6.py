@@ -15,7 +15,7 @@ def find_markers(datastream):
             
     return markers
 
-with open("inputD6.txt", "r") as handle:
+with open("inputs/inputD6.txt", "r") as handle:
     datastream = handle.readlines()[0]
     
 pairs = find_markers(datastream)

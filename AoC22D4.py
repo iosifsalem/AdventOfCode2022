@@ -3,7 +3,7 @@
 
 import portion as P
 
-with open("inputD4.txt", "r") as handle:
+with open("inputs/inputD4.txt", "r") as handle:
     lines = handle.readlines()
     
 number_of_inclusions = 0
