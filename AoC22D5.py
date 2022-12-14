@@ -1,6 +1,8 @@
 # advent of code 2022
 # day 5 (Supply Stacks): https://adventofcode.com/2022/day/5
 
+from time import time
+
 def initialize_stacks(lines):    
     # locate id line 
     id_line = 0
@@ -20,6 +22,8 @@ def initialize_stacks(lines):
                 
     return stacks, id_line + 2
 
+start_time = time()
+
 with open("inputs/inputD5.txt", "r") as handle:
     lines = handle.readlines()
     
@@ -36,3 +40,4 @@ for line in lines[start_of_moves:]:
     stacks[to_stack] += new_crates
     
 print(f"Top items in stacks: {''.join([stacks[i+1][-1] for i in range(len(stacks)) if stacks[i+1]])}")
+print(f"Duration: {int((time()-start_time)*1000)/1000}s")

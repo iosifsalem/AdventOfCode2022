@@ -9,6 +9,8 @@
 # two passes over the input are enough to have all info on view limiting trees
 # for task 2, max_neighbor[ID(i,j)]['max_view'][direction] stores info about furthest visible tree from i,j, for a specific direction
 
+from time import time
+
 def height(i,j,lines):
     return int(lines[i][j])
 
@@ -91,6 +93,8 @@ def compute_scenic_score(i,j,max_neighbor):
     
     return max_neighbor
 
+start_time = time()
+
 with open("inputs/inputD8.txt", "r") as handle:
     lines = handle.readlines()
 
@@ -147,3 +151,4 @@ while traversal_counter < traversal_length-1:
     
 print(f"Part 1: visible trees: {visible_trees}")
 print(f"Part 2: best scenic score possible: {max_neighbor[ID(best_scenic_score[0],best_scenic_score[1])]['scenic_score']} (achieved by node {best_scenic_score})")
+print(f"Duration: {int((time()-start_time)*100)/100}s")

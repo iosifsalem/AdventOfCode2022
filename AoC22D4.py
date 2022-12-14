@@ -2,6 +2,9 @@
 # day 4 (Camp Cleanup): https://adventofcode.com/2022/day/4
 
 import portion as P
+from time import time
+
+start_time = time()
 
 with open("inputs/inputD4.txt", "r") as handle:
     lines = handle.readlines()
@@ -24,3 +27,4 @@ for line in lines:
 
 print(f'Part 1: number of inclusions = {number_of_inclusions}')
 print(f'Part 2: number of overlaps = {number_of_overlaps}')
+print(f"Duration: {int((time()-start_time)*1000)/1000}s")

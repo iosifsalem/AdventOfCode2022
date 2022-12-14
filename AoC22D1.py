@@ -1,7 +1,11 @@
 # advent of code 2022
 # day 1 (calorie counting): https://adventofcode.com/2022/day/1
 
-with open("inputs/inputD1P1.txt", "r") as handle:
+from time import time
+
+start_time = time()
+
+with open("inputs/inputD1.txt", "r") as handle:
     lines = handle.readlines()
 
 elf_counter = 0  # current elf
@@ -25,3 +29,4 @@ print(f"Elf {elf_calories[0][0]} has max calories: {elf_calories[0][1]}")
 
 # part 2:
 print(f"Top three elves are {elf_calories[0][0]}, {elf_calories[1][0]}, and {elf_calories[2][0]}, with total calories: {sum([elf_calories[i][1] for i in [0,1,2]])}")
+print(f"Duration: {int((time()-start_time)*10000)/10000}s")

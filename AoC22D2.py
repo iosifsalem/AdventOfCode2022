@@ -1,6 +1,8 @@
 # advent of code 2022
 # day 2 (rock, paper, scissors): https://adventofcode.com/2022/day/2
 
+from time import time
+
 def rock_paper_scissors(opponent_move, my_move):
     moves = ['rock', 'scissors', 'paper']
     op_index = moves.index(opponent_move)
@@ -67,6 +69,8 @@ def compute_reward(line):
     
     return reward
 
+start_time = time()
+
 with open("inputs/inputD2.txt", "r") as handle:
     lines = handle.readlines()
     
@@ -75,3 +79,4 @@ for line in lines:
     total_reward += compute_reward(line)    
     
 print(f'Total reward is {total_reward}')
+print(f"Duration: {int((time()-start_time)*1000)/1000}s")

@@ -2,6 +2,9 @@
 # day 3 (Rucksack Reorganization): https://adventofcode.com/2022/day/3
 
 import string
+from time import time
+
+start_time = time()
 
 with open("inputs/inputD3.txt", "r") as handle:
     lines = handle.readlines()
@@ -34,3 +37,4 @@ for i in range(int(len(lines)/3)):
     sum_of_priorities_part2 += priority(badge)
     
 print(f'Part 2: sum of priorities = {sum_of_priorities_part2}')
+print(f"Duration: {int((time()-start_time)*1000)/1000}s")

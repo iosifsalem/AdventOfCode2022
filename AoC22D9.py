@@ -1,6 +1,8 @@
 # advent of code 2022
 # day 9 (Rope Bridge): https://adventofcode.com/2022/day/9
 
+from time import time
+
 def state(X,Y):
     if (abs(X[0]-Y[0]), abs(X[1]-Y[1])) in {(2,0), (0,2)}:
         return 'two horizontal/vertical'
@@ -14,6 +16,7 @@ def state(X,Y):
 with open("inputs/inputD9.txt", "r") as handle:
     lines = handle.readlines()
 
+start_time = time()
 rope_length = 10
 rope = {i:(0,0) for i in range(rope_length)}  # init all knots at (0,0) 
 unique_positions_of_tail = {(0,0)}
@@ -41,5 +44,5 @@ for line in lines:
             knot += 1
             
         unique_positions_of_tail = unique_positions_of_tail.union({rope[rope_length-1]})
-    
-print(f"unique positions of tail: {len(unique_positions_of_tail)}")
+
+print(f"unique positions of tail: {len(unique_positions_of_tail)}, computed in {int((time()-start_time)*100)/100}s")

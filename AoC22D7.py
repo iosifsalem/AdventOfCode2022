@@ -2,6 +2,9 @@
 # day 7 (No Space Left On Device): https://adventofcode.com/2022/day/7
 
 import anytree as T  
+from time import time
+
+start_time = time()
 
 with open("inputs/inputD7.txt", "r") as handle:
     lines = handle.readlines()
@@ -68,3 +71,4 @@ for node in root.descendants:
 print(f'Part 1: sum of directories with size smaller than {threshold} = {sum_of_directories_smaller_than_threshold}')
 print(f'Part 2: space needed={space_needed}, smallest directory to be deleted is {candidate_directory.name} with size {candidate_directory.size} and path:\n{candidate_directory.path[-1]}')
 # print(T.RenderTree(root))
+print(f"Duration: {int((time()-start_time)*100)/100}s")

@@ -1,0 +1,56 @@
+Durations are either for both parts or for the one that took longer.
+
+=== Day 1 ===
+part 1: 71506
+part 2: 209603
+duration: ~0.001s
+
+=== Day 2 ===
+part 1: 11873
+part 2: 12014
+duration: ~0.002s
+
+=== Day 3 ===
+part 1: 7850
+part 2: 2581
+duration: ~0.002s
+
+=== Day 4 ===
+part 1: 536
+part 2: 845
+duration: ~0.03s
+
+=== Day 5 ===
+part 1: JDTMRWCQJ
+part 2: VHJDDCWRD
+duration: ~0.001s
+
+=== Day 6 ===
+part 1: 1235
+part 2: 3051
+duration: ~0.003s
+
+=== Day 7 ===
+part 1: 1443806
+part 2: 942298
+duration: ~0.02s
+
+=== Day 8 ===
+part 1: 1688
+part 2: 410400
+duration: ~0.5s
+
+=== Day 9 ===
+part 1: 6212
+part 2: 2522
+duration: ~0.75s
+
+=== Day 10 ===
+part 1: 14060
+part 2: PAPKFKEJ
+duration: ~0.001s
+
+=== Day 11 ===
+part 1: 
+part 2: 
+duration: ~
