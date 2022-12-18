@@ -56,6 +56,71 @@ part 2: 15050382231
 duration: ~0.6s
 
 === Day 12 ===
+part 1: 330
+part 2: 321
+duration: ~0.6s
+
+=== Day 13 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 14 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 15 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 16 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 17 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 18 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 19 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 20 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 21 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 22 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 23 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 24 ===
+part 1: 
+part 2: 
+duration: ~
+
+=== Day 25 ===
 part 1: 
 part 2: 
 duration: ~
