@@ -61,9 +61,9 @@ part 2: 321
 duration: ~0.6s
 
 === Day 13 ===
-part 1: 
-part 2: 
-duration: ~
+part 1: 5185
+part 2: 23751
+duration: ~0.05s
 
 === Day 14 ===
 part 1: 

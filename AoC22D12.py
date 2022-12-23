@@ -40,7 +40,7 @@ for i in range(rows):
         elif lines [i][j] == 'a':
             candidate_starting_points.append((i,j))  # part 2
             
-        # add edges and mark start/end node
+        # add edges 
         if j == 0 and i != 0:
             heat_map = inspect_pair(heat_map, (i,j), (i-1,j))
         elif j > 0:
